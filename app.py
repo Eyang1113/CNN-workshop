@@ -25,8 +25,6 @@ vgg_model.classifier[6] = torch.nn.Linear(vgg_model.classifier[6].in_features, 5
 # Try to load the model, download if not available
 try:
     vgg_model.load_state_dict(torch.load('./balls_classification.pth', map_location=torch.device('cpu')))
-    print("State dict keys:", state_dict.keys())
-    vgg_model.load_state_dict(state_dict)
 except FileNotFoundError:
     with st.spinner("Downloading model. Please wait..."):
         # Download model from Google Drive (make sure this is the correct link for the ball model)
