@@ -32,7 +32,7 @@ except FileNotFoundError:
 
 vgg_model.eval()
 
-st.write("""Please upload an image file for the model to make predictions. The predicted fruit class will be displayed.)
+st.write("""Please upload an image file for the model to make predictions. The predicted fruit class will be displayed.""")
 
 # File uploader for image
 image = st.file_uploader("Upload an image (jpg, png, jpeg)", type=["jpg", "png", "jpeg"])
