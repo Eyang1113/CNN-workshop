@@ -5,6 +5,7 @@ from PIL import Image
 import torchvision.models as models
 import gdown
 
+# Title and description
 st.title("Balls Classification App")
 st.write("Classes: Shuttlecock, Volleyball, Tennis Ball, Basketball, Baseball")
 
