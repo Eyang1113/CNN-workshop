@@ -1,4 +1,5 @@
 import streamlit as st
+import torch
 import torchvision.transforms as transforms
 from PIL import Image
 import torchvision.models as models
