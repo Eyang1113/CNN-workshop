@@ -52,7 +52,7 @@ if image is not None:
     ])
     img_tensor = preprocess(img).unsqueeze(0)  # Add batch dimension
 
-    # Make prediction
+    # Make prediction can try to use sigmoid
     with torch.no_grad():
         output = vgg_model(img_tensor)
         _, predicted = torch.max(output, 1)
