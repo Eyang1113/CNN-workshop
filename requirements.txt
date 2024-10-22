@@ -1,5 +1,7 @@
+torchsummary
 torch
 torchvision
-Pillow
+scikit-learn
+opencv-python
+tqdm
 gdown
-streamlit
