@@ -1,2 +1,41 @@
 # Sports Equipment (balls) Classification using CNN
-Project Description: This project focuses on developing a sports equipment classification system using transfer learning with the pre-trained VGG11 model. The goal is to accurately classify images of five types of sports equipment: baseballs, basketballs, shuttlecocks, tennis balls, and volleyballs. The VGG11 model, pre-trained on the ImageNet dataset, is fine-tuned to leverage its powerful feature extraction capabilities for this specific task. Images are preprocessed using techniques like resizing, normalization, and data augmentation to improve the model's generalization. By freezing the early layers of VGG11 and retraining the final layers, the model adapts to the new dataset with fewer training resources. The classification performance is evaluated using a confusion matrix, which reveals the model’s ability to correctly predict most classes, with strong performance for basketballs and tennis balls. However, some confusion exists between similar classes, such as shuttlecocks and volleyballs. This project aims to improve classification accuracy through further fine-tuning and regularization, ultimately contributing to applications in sports equipment recognition. The use of transfer learning with VGG11 demonstrates the efficiency of pre-trained models in tackling real-world image classification tasks.
+# 🏀 Sports Equipment Classification using VGG11 and Transfer Learning
+
+This project presents a deep learning-based image classification system designed to identify five types of sports equipment with high accuracy. Leveraging **transfer learning** and the **VGG11 model** pre-trained on ImageNet, the model is fine-tuned specifically for sports object recognition.
+
+## 🎯 Objective
+
+To accurately classify images of:
+- ⚾ Baseballs  
+- 🏀 Basketballs  
+- 🏸 Shuttlecocks  
+- 🎾 Tennis Balls  
+- 🏐 Volleyballs  
+
+using a customized version of the VGG11 neural network.
+
+## 🧠 Model Architecture
+
+We use **VGG11**, a deep convolutional neural network originally trained on ImageNet, for feature extraction. Key steps include:
+- **Freezing early layers** to retain pre-trained feature representations.
+- **Replacing and retraining final layers** to tailor predictions for five sports equipment classes.
+
+## 🧰 Preprocessing Techniques
+
+To ensure robust model performance and generalization:
+- 🖼️ **Image resizing** to 224x224 pixels
+- 🎨 **Normalization** using ImageNet mean and standard deviation
+- 🔄 **Data augmentation**: random flips, rotations, and color jitter
+
+## 🧪 Evaluation
+
+The model's classification accuracy was evaluated using a **confusion matrix**, providing insights into:
+- ✅ Strong performance for **basketballs** and **tennis balls**
+- ⚠️ Notable confusion between **shuttlecocks** and **volleyballs**, due to visual similarities
+
+## 📌 Tools & Technologies
+
+- **Framework**: PyTorch
+- **Model**: VGG11 (pre-trained on ImageNet)
+- **Metrics**: Accuracy, Confusion Matrix
+- **Environment**: Jupyter Notebook / Google Colab
