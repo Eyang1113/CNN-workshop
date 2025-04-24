@@ -27,11 +27,6 @@ To ensure robust model performance and generalization:
 - 🎨 **Normalization** using ImageNet mean and standard deviation
 - 🔄 **Data augmentation**: random flips, rotations, and color jitter
 
-## 🧪 Evaluation
-
-The model's classification accuracy was evaluated using a **confusion matrix**, providing insights into:
-- ✅ Strong performance for **basketballs** and **tennis balls**
-- ⚠️ Notable confusion between **shuttlecocks** and **volleyballs**, due to visual similarities
 
 ## 📌 Tools & Technologies
 
